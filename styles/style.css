@@ -1,0 +1,291 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+}
+
+/*Панель навигации*/
+header{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: center;
+}
+
+nav{
+	height: 60px;
+	display: flex;
+	background-color: #49312b;
+	justify-content: center;
+}
+
+.navig{
+	list-style: none;
+	display: flex;
+	width: 40%;
+	justify-content: space-between;
+	padding: 0;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.nav_a{
+	text-decoration: none;
+	color: #caae86;
+	text-transform: uppercase;
+}
+
+.nav_a:hover{
+	color: #afa5a0;
+}
+
+/*Экран с именем*/
+.screen{
+	height: 600px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	background: url(../assets/img/main.png) no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.name{
+	color: #49312b;
+	font-size: 40px;
+	text-shadow: 0px 0px 20px #313415;
+	border: 8px solid #49312b;
+	padding: 15px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+h3{
+	padding: 30px 0 3px 0;
+	margin: 0;
+	font-size: 25px;
+	color: #49312b;
+	border-bottom: 3px solid #49312b;
+	position: relative;
+}
+
+.name_inf{
+	padding-bottom: 5px;
+}
+/*заголовки по резюме*/
+.headings{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	width: 900px;
+	padding-top: 10px;
+}
+
+.name2{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	width: 30%;
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #49312b;
+}
+
+/*содержимое*/
+.resume{
+	display: flex;
+	justify-content: space-between;
+	width: 900px;
+	height: 80%;
+	color: #49312b;
+}
+
+/*about me*/
+.about{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	height: 370px;
+	background: #e6cea8;
+}
+
+/*описание*/
+p{
+	line-height: 30px;
+}
+/*фото профиля*/
+.disc_about, .photo, .conf_inf{
+	width: 30%;
+}
+
+.photo{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+
+}
+.round{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	flex-basis: 75%;
+	background: url(../assets/img/2_zhurav.jpg) no-repeat -550px -220px;
+	transition: ease-out 0.5s;
+}
+
+.round:hover{
+	flex-basis: 100%;
+	border-radius: 10%;
+	-webkit-background-size: cover;
+	background: url(../assets/img/2_zhurav.jpg) no-repeat center;
+	background-size: cover;
+}
+
+/*информация*/
+.inf_main{
+	list-style: none;
+	padding: 0;
+	line-height: 30px;
+}
+p{
+	margin: 0;
+	text-align: justify;
+}
+
+span{
+	letter-spacing: 2px;
+	color: #1a1f01;
+}
+
+span:hover{/*!!!!!!!!!!!!*/
+	cursor: pointer;
+	color: #243d48;
+}
+
+.icon-list{
+	display: flex;
+	list-style: none;
+	padding-left: 0;
+	margin-top: 5px;
+}
+
+.ic-im{
+	width: 25px;
+	height: 25px;
+}
+
+/*education*/
+.education{
+	height: 370px;
+	background: #b79d7a;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	color: #49312b;
+}
+
+.educ{
+	width: 900px;
+	height: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.school{
+	width: 50%;
+}
+
+h4.ed{
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+.english{
+	width: 49%;
+}
+
+p.ed_eng{
+	margin-top: 15px;
+}
+
+/*skills*/
+.sk_head{
+	padding-top: 10px;
+}
+
+.skill_list{
+	list-style: none;
+	margin: 0;
+	padding: 10px 0 0 0;
+}
+
+li.skill{
+	line-height: 30px;
+}
+
+footer{
+	height: 60px;
+	display: flex;
+	background-color: #49312b;
+	color: #caae86;
+	justify-content: center;
+}
+
+.end{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 900px;
+	justify-content: space-between;
+}
+.say{
+	width: 30%;
+}
+
+.au{
+	width: 20%;
+}
+
+.au, .say{
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+
